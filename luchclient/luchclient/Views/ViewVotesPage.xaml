@@ -4,14 +4,16 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="luchclient.Views.CreateGroupPage"
+             x:Class="luchclient.Views.ViewVotesPage"
              Title="{Binding Title}">
 
-
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Group name:" />
-        <Entry Text="{Binding NewGroup}" />
-        <Button Text="Add group" Command="{Binding NavigateMainPageCommand}"></Button>
+        <Label Text="Pizza1 : 3" />
+        <Label Text="Pizza2 : 3" />
+        <Label Text="Pizza3 : 3" />
+        <Label Text="Pizza4 : 3" />
+        <Label Text="Pizza5 : 3" />
+        <Label Text="Sushi : 1" />
     </StackLayout>
 
 </ContentPage>

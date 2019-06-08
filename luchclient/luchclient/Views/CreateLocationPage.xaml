@@ -4,14 +4,13 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="luchclient.Views.CreateGroupPage"
+             x:Class="luchclient.Views.CreateLocationPage"
              Title="{Binding Title}">
 
-
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Group name:" />
-        <Entry Text="{Binding NewGroup}" />
-        <Button Text="Add group" Command="{Binding NavigateMainPageCommand}"></Button>
-    </StackLayout>
+         <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+             <Label Text="Location name:" />
+             <Entry Text="{Binding NewLocation}" />
+             <Button Text="Add location" Command="{Binding NavigateSelectLocationCommand}"></Button>
+         </StackLayout>
 
 </ContentPage>

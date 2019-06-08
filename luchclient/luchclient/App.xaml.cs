@@ -31,6 +31,11 @@ namespace luchclient
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<CreateGroupPage, CreateGroupPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelectGroupPage, SelectGroupPageViewModel>();
+            containerRegistry.RegisterForNavigation<SelectLocationPage, SelectLocationPageViewModel>();
+            containerRegistry.RegisterForNavigation<CreateLocationPage, CreateLocationPageViewModel>();
+            containerRegistry.RegisterForNavigation<VoteLocationPage, VoteLocationPageViewModel>();
+            containerRegistry.RegisterForNavigation<ViewVotesPage, ViewVotesPageViewModel>();
         }
     }
 }

@@ -10,12 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace luchclient.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateGroupPage : ContentPage
+    public partial class SelectGroupPage : ContentPage
     {
-        public CreateGroupPage()
+        public SelectGroupPage()
         {
             InitializeComponent();
-
         }
     }
 }

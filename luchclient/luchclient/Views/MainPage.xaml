@@ -4,9 +4,12 @@
              x:Class="luchclient.Views.MainPage"
              Title="{Binding Title}">
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
+
+        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Label Text="Welcome to Meet, Snack, Go!" />
         <Button Text="Create a group" Command="{Binding NavigateCreateGroupCommand}"></Button>
+        <Button Text="Select a group" Command="{Binding NavigateSelectGroupCommand}"></Button>
+        <Button Text="View votes" Command="{Binding NavigateViewVotesCommand}"></Button>
     </StackLayout>
 
 </ContentPage>
