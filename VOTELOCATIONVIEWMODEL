@@ -1,0 +1,48 @@
+using luchclient.Views;
+using Prism.Commands;
+using Prism.Mvvm;
+using Prism.Navigation;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Windows.Input;
+
+namespace luchclient.ViewModels
+{
+    public class VoteLocationPageViewModel : ViewModelBase
+    {
+
+        public List<String> GroupLocations { get; } = new List<string>();
+        public String SelectedLocation { get; set; }
+        public ICommand NavigateSelectLocationCommand { get; }
+
+        public VoteLocationPageViewModel(INavigationService navigationService)
+                    : base(navigationService)
+        {
+            {
+                Title = "Select Location";
+
+                GroupLocations.Add("Pizza1");
+                GroupLocations.Add("Pizza2");
+                GroupLocations.Add("Pizza3");
+                GroupLocations.Add("Pizza4");
+                GroupLocations.Add("Pizza5");
+                GroupLocations.Add("Sushi");
+
+
+            }
+
+            // Dictionary to get Color from color name.
+
+
+
+        }
+    }
+}
+
+
+
+
+
+
