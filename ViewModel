@@ -1,0 +1,41 @@
+using Prism.Navigation;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Xamarin.Forms;
+
+namespace luchclient.ViewModels
+{
+    public class SelectGroupPageViewModel : ViewModelBase
+    {
+        public List<String> GroupLocations { get; } = new List<string>();
+        public String SelectedLocation { get; set; }
+
+        public SelectGroupPageViewModel(INavigationService navigationService)
+                    : base(navigationService)
+        {
+            Title = "Select group";
+
+            GroupLocations.Add("Pizza1");
+            GroupLocations.Add("Pizza2");
+
+        }
+
+        // Dictionary to get Color from color name.
+        Dictionary<string, Color> nameToColor = new Dictionary<string, Color>
+        {
+            { "Aqua", Color.Aqua }, { "Black", Color.Black },
+            { "Blue", Color.Blue },
+            { "Gray", Color.Gray }, { "Green", Color.Green },
+            { "Lime", Color.Lime }, { "Maroon", Color.Maroon },
+            { "Navy", Color.Navy }, { "Olive", Color.Olive },
+            { "Purple", Color.Purple }, { "Red", Color.Red },
+            { "Silver", Color.Silver }, { "Teal", Color.Teal },
+            { "White", Color.White }, { "Yellow", Color.Yellow }
+        };
+
+        public Thickness Padding { get; }
+        public StackLayout Content { get; }
+    }
+    }
+
