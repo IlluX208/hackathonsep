@@ -6,6 +6,7 @@
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
+        <Button Text="Create a group" Command="{Binding NavigateCreateGroupCommand}"></Button>
     </StackLayout>
 
 </ContentPage>
